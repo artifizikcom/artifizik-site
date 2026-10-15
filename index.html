@@ -205,8 +205,10 @@
       </section>
 
       <!-- GitHub Pages form verisi alamaz. "Soruyu gönder", e-posta uygulamasını hazır doldurulmuş bir mesajla açar (js/soru.js).
-           Adres değişirse hem data-adres hem action içindeki adresi güncelle. -->
-      <form class="kutu soru-formu" id="soru" data-adres="iletisim@artifizik.com" action="mailto:iletisim@artifizik.com" method="post" enctype="text/plain" aria-labelledby="soru-baslik">
+           Forma action="mailto:..." yazma: Chrome, HTTPS sayfasında güvenli olmayan bir hedefe gönderen formu görünce
+           adres çubuğundaki kilidi kaldırır ("tam olarak güvenli değil").
+           Adres değişirse data-adres değerini ve aşağıdaki noscript bağlantısını güncelle. -->
+      <form class="kutu soru-formu" id="soru" data-adres="iletisim@artifizik.com" aria-labelledby="soru-baslik">
         <h2 id="soru-baslik">Takıldığın yeri sor</h2>
         <p class="aciklama">Her soru okunur; yanıt vermek zaman alabilir. Sık gelen sorular yeni videolara dönüşür.</p>
         <label for="durak">Hangi harita ve durak?</label>
@@ -219,6 +221,7 @@
         <textarea id="tahmin" name="tahmin" rows="2"></textarea>
         <button class="dugme-koyu" type="submit">Soruyu gönder</button>
         <p class="not">Gönder'e basınca e-posta uygulaman hazır bir mesajla açılır. Adını yazmak zorunda değilsin; mesaj kendi e-posta adresinden gider. Ödev çözülmez, birebir ders verilmez.</p>
+        <noscript><p class="not">Tarayıcında JavaScript kapalıysa sorunu doğrudan <a href="mailto:iletisim@artifizik.com">iletisim@artifizik.com</a> adresine yazabilirsin.</p></noscript>
       </form>
     </div>
 

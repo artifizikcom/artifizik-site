@@ -30,6 +30,7 @@
 ## Gizlilik (kullanıcıların çoğu reşit olmayan öğrenciler)
 - Çerez, analitik ya da izleme betiği, üçüncü taraf yazı tipi veya CDN ekleme.
 - "Takıldığın yeri sor" formu bir sunucuya veri göndermez; `js/soru.js` e-posta uygulamasını hazır mesajla açar. Üçüncü taraf form servisi kullanıcının açık onayı olmadan eklenmez.
+- Formlara `action="mailto:..."` ya da `http://` hedef yazma. Chrome böyle bir formu görünce adres çubuğundaki kilidi kaldırır ve siteyi "tam olarak güvenli değil" diye gösterir.
 - YouTube videoları yalnızca tıkla-yükle yapısıyla gömülür (`js/harita.js`, youtube-nocookie.com). Oynat'a basılmadan YouTube'a istek gitmez.
 - Bunlardan biri değişirse `hakkimda.html` içindeki Gizlilik bölümünü de güncelle.
 
