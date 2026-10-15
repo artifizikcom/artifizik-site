@@ -1,0 +1,5 @@
+# GitHub Pages ayarı: bu dosyalar sitede sayfa olarak yayınlanmasın.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - KISA-ADRESLER.md

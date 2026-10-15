@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hareket grafikleri haritası | Artı Fizik</title>
+  <meta name="description" content="Hareket grafikleri A3 haritası: 6 durak ve 1 ileri durak. Her durakta kısa bir video, bir görev ve bir kontrol sorusu.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+  <script src="hareket-grafikleri.js" defer></script>
+  <script src="../js/harita.js" defer></script>
+</head>
+<body data-harita="hareket-grafikleri">
+  <a class="atla" href="#durak-paneli">Durağa geç</a>
+
+  <header class="ust harita-ust">
+    <div class="kap kap--genis ust__ic">
+      <div class="harita-ust__sol">
+        <a class="marka" href="../index.html">
+          <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true"><circle cx="19" cy="19" r="17" stroke="#1b2433" stroke-width="2.5"/><path d="M19 10.5v17M10.5 19h17" stroke="#d9651b" stroke-width="3.5" stroke-linecap="round"/></svg>
+          <span>Artı Fizik</span>
+        </a>
+        <nav class="iz" aria-label="Konum">
+          <a href="../index.html#haritalar">Haritalar</a><span aria-hidden="true">/</span><span>10. sınıf</span><span aria-hidden="true">/</span><span aria-current="page">Hareket grafikleri</span>
+        </nav>
+      </div>
+      <!-- PDF'ler yayına girene kadar düğmeler tıklanamaz ("yakında"). İki PDF notlar/ klasörüne eklenince
+           bu iki satırı ve aşağıdaki "indirmeler" bölümündekileri şunlarla değiştir:
+        <a class="dugme-koyu" href="../notlar/hareket-grafikleri-a3.pdf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>A3 · öğrenci sürümü</a>
+        <a class="dugme-cerceve" href="../notlar/hareket-grafikleri-cevap-anahtari.pdf">Cevap anahtarı</a> -->
+      <div class="harita-ust__sag">
+        <a class="dugme-koyu dugme--yakinda">A3 · öğrenci sürümü · yakında</a>
+        <a class="dugme-cerceve dugme--yakinda">Cevap anahtarı · yakında</a>
+      </div>
+      <a class="dugme-cerceve haritayi-gor" href="#harita-bolumu">Haritayı gör</a>
+    </div>
+  </header>
+
+  <main class="kap kap--genis harita-govde">
+    <section class="harita-sol" id="harita-bolumu" aria-label="A3 harita">
+      <div class="harita-cerceve">
+        <div class="harita kareli-acik" id="harita">
+          <div class="harita__baslik">
+            <h1>Hareket grafikleri</h1>
+            <!-- Kazanım kodları yalnızca TYMM fizik öğretim programından birebir alınır.
+                 FİZ.10.1.1. Yatay doğrultuda sabit hızlı hareket ile ilgili tümevarımsal akıl yürütebilme -->
+            <div class="harita__alt-baslik">10. SINIF · KUVVET VE HAREKET · FİZ.10.1.1</div>
+          </div>
+          <div class="harita__not">A3 · YATAY · BASKIDA HER DURAĞIN YANINDA QR KOD</div>
+        </div>
+      </div>
+      <div class="lejant">
+        <span><i style="background:#d9651b"></i>Ana hat</span>
+        <span><i style="background:#1f5fa8"></i>İleri hat (isteğe bağlı)</span>
+        <span><i class="kesik"></i>Kontrol köşesine</span>
+        <span class="lejant__ipucu">Bir durağa tıkla, büyüsün.</span>
+      </div>
+      <div class="indirmeler">
+        <a class="dugme-koyu dugme--yakinda">A3 · öğrenci sürümü · yakında</a>
+        <a class="dugme-cerceve dugme--yakinda">Cevap anahtarı · yakında</a>
+      </div>
+    </section>
+
+    <aside class="durak-paneli" id="durak-paneli" aria-label="Durak ayrıntısı">
+      <noscript><p>Durakları görmek için tarayıcında JavaScript'in açık olması gerekiyor.</p></noscript>
+    </aside>
+  </main>
+
+  <p class="gorunmez" id="duyuru" aria-live="polite"></p>
+</body>
+</html>
